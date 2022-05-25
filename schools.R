@@ -20,3 +20,4 @@ fit1 <- stan(
 fit1
 plot(fit1)
 traceplot(fit1, pars = c("mu", "tau"), inc_warmup = TRUE, nrow = 2)
+pairs(fit1, pars = c("mu", "tau", "lp__"), las = 1)
